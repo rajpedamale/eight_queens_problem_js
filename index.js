@@ -75,7 +75,7 @@ const eightQueens = () => {
 
         debug && console.log('A solution?', solution);
 
-        // inner loop is exit when
+        // inner loop will exit when
         // a) a solution is found, or
         // b) there are no more positions to explore
         if(!!position) {
