@@ -38,12 +38,11 @@ const getNextSpotFromLastSafePosition = (solution, position ) => {
     return newPosition;
 }
 
-function isNotASolution(position, solution, safePosition) {
+const isNotASolution = (position, solution, safePosition) => {
     if (!!position && solution.length < 8 && position.row > -1) {
         return true;
     }
     return solution.length === 8 && !safePosition;
-
 }
 
 const eightQueens = () => {
