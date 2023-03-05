@@ -42,10 +42,8 @@ function isNotASolution(position, solution, safePosition) {
     if (!!position && solution.length < 8 && position.row > -1) {
         return true;
     }
-    if (solution.length === 8 && !safePosition) {
-        return true;
-    }
-    return false;
+    return solution.length === 8 && !safePosition;
+
 }
 
 const eightQueens = () => {
